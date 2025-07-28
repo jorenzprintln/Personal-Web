@@ -88,8 +88,7 @@
                             <div class="floating-element element-3"></div>
                         </div>
                         <!-- Replace with your actual photo -->
-                        <div class="profile-image"><img src="{{ asset('images/portfolio.png') }}" alt="Profile Picture">
-</div>
+                        <div class="profile-image"><img src="/images/portfolio.png" alt="Profile Picture"></div>
                     </div>
                 </div>
             </div>
@@ -173,7 +172,7 @@
         <div class="projects-grid">
             <div class="project-card">
                 <div class="project-image">
-                    <img src="{{ asset('images/mathpop.png') }}" alt="Math Pop" class="project-bg-img">
+                    <img src="{{ asset('images/mathpop.png') }}" alt="Math Pop">
                     <div class="project-overlay">
                         <a href="https://github.com/jorenzprintln/mathpop" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
                     </div>
@@ -209,7 +208,7 @@
             </div>
             <div class="project-card">
                 <div class="project-image">
-                    <img src="{{ asset('images/phishing.jpg') }}" alt="Phishing Prevention App" class="project-bg-img">
+                    <img src="{{ asset('images/phishing.jpg') }}" alt="Phishing Prevention App">
                     <div class="project-overlay">
                         <a href="https://github.com/jorenzprintln/phishing" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
                     </div>
