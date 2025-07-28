@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    @vite(['resources/css/personal_web.css', 'resources/js/personal_web.js'])
+    <link rel="stylesheet" href="{{ asset('/personal_web.css') }}">
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
@@ -288,6 +288,6 @@
         <p>&copy; 2025 Jorenz Pablo. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="{{ asset('/personal_web.js') }}"></script>
 </body>
 </html>
