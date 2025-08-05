@@ -4,11 +4,60 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PJX - Portfolio</title>
+    <link rel="icon" href="/images/love-always-wins.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/personal_web.css">
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <style>
+        /* Additional styles for image icons */
+        .wave-img {
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            margin-right: 8px;
+            animation: wave 2s ease-in-out infinite;
+
+        }
+        
+        .skill-icon {
+            width: 130px;
+            height: 130px;
+            margin: 0 auto 1rem;
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+        }
+        
+        .skill-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            margin-right: 1rem;
+        }
+        
+        .contact-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
     <!-- Sticky Navigation -->
@@ -46,7 +95,7 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <div class="greeting">
-                        <span class="wave">👋</span>
+                        <img src="/images/hello.png" alt="Wave" class="wave-img">
                         <span>Hello, I'm</span>
                     </div>
                     <h1 class="hero-title">
@@ -95,138 +144,142 @@
         </section>
 
         <!-- About Section -->
-        <!-- Replace your existing About Section with this -->
-<section id="about" class="section about-section">
-    <div class="section-content">
-        <div class="section-header">
-            <span class="section-tag">About Me</span>
-            <h2 class="section-title">Who I Am</h2>
-        </div>
-        <div class="about-content">
-            <div class="about-text">
-                <p>
-                    I'm a passionate full-stack developer from Tacloban City, Philippines, with a strong foundation 
-                    in both mobile and web development. I love creating digital solutions that make a difference 
-                    and constantly learning new technologies to stay at the forefront of innovation.
-                </p>
-                
-                <!-- Personal Information Grid -->
-                <div class="personal-info-grid">
-                    <div class="info-section">
-                        <h3 class="info-title">Personal Information</h3>
-                        <div class="info-items">
-                            <div class="info-item">
-                                <span class="info-label">Full Name:</span>
-                                <span class="info-value">Paul Jorenz Pablo</span>
+        <section id="about" class="section about-section">
+            <div class="section-content">
+                <div class="section-header">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">Who I Am</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I'm a passionate full-stack developer from Tacloban City, Philippines, with a strong foundation 
+                            in both mobile and web development. I love creating digital solutions that make a difference 
+                            and constantly learning new technologies to stay at the forefront of innovation.
+                        </p>
+                        
+                        <!-- Personal Information Grid -->
+                        <div class="personal-info-grid">
+                            <div class="info-section">
+                                <h3 class="info-title">Personal Information</h3>
+                                <div class="info-items">
+                                    <div class="info-item">
+                                        <span class="info-label">Full Name:</span>
+                                        <span class="info-value">Paul Jorenz Pablo</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-label">Age:</span>
+                                        <span class="info-value">20 years old</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-label">Location:</span>
+                                        <span class="info-value">Tacloban City, Philippines</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-label">Languages:</span>
+                                        <span class="info-value">English, Filipino, Waray</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="info-item">
-                                <span class="info-label">Age:</span>
-                                <span class="info-value">21 years old</span>
+                        </div>
+
+                        <!-- Educational Background -->
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <img src="/images/national.png" alt="High School">
+                                </div>
+                                <h3>High School</h3>
+                                <p>Burauen National High School<br>
+                                <span class="education-year">2016 - 2020</span></p>
                             </div>
-                            <div class="info-item">
-                                <span class="info-label">Location:</span>
-                                <span class="info-value">Tacloban City, Philippines</span>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                   <img src="/images/pagsulhugon.png" alt="Senior High School">
+                                </div>
+                                <h3>Senior High School</h3>
+                                <p>Pagsulhugon National High School<br>
+                                TVL - CSS Strand<br>
+                                <span class="education-year">2020 - 2022</span></p>
                             </div>
-                            <div class="info-item">
-                                <span class="info-label">Languages:</span>
-                                <span class="info-value">English, Filipino, Waray</span>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <img src="/images/lnu.png" alt="College">
+                                </div>
+                                <h3>College</h3>
+                                <p>Leyte Normal University<br>
+                                Bachelor of Science in Information Technology<br>
+                                <span class="education-year">2025 - Present - 4th Year</span></p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <!-- Educational Background -->
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <div class="skill-icon">🎓</div>
-                        <h3>High School</h3>
-                        <p>Burauen National High School<br>
-                        <span class="education-year">2016 - 2020</span></p>
+        <section id="projects" class="section projects-section">
+            <div class="section-content">
+                <div class="section-header">
+                    <span class="section-tag">My Work</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/images/mathpop.png" alt="Math Pop">
+                            <div class="project-overlay">
+                                <a href="https://github.com/jorenzprintln/mathpop" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>MathPoP</h3>
+                            <p>Mobile Arithmetic Math Game Application built with React Native</p>
+                            <div class="project-tags">
+                                <span class="tag">React Native</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-icon">📚</div>
-                        <h3>Senior High School</h3>
-                        <p>Pagsulhugon National High School<br>
-                        TVL - CSS Strand<br>
-                        <span class="education-year">2020 - 2022</span></p>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+         alt="Encryption & Decryption App" 
+         class="project-bg-img">
+                            <div class="project-overlay">
+                                <a href="https://github.com/jorenzprintln/blowfish" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>BlowLock</h3>
+                            <p>Mobile Application for Encyprting and Decrypting Files using Blowfish Algorithm.</p>
+                            <div class="project-tags">
+                                <span class="tag">React Native</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Python</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-icon">🏛️</div>
-                        <h3>College</h3>
-                        <p>Leyte Normal University<br>
-                        Bachelor of Science in Information Technology<br>
-                        <span class="education-year">2025 - Present - 4th Year</span></p>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/images/phishing.jpg" alt="Phishing Prevention App">
+                            <div class="project-overlay">
+                                <a href="https://github.com/jorenzprintln/phishing" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>PhishPrevent</h3>
+                            <p>Mobile Application for Phishing Prevention</p>
+                            <div class="project-tags">
+                                <span class="tag">React Native</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Safe Browsing API</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-
-<section id="projects" class="section projects-section">
-    <div class="section-content">
-        <div class="section-header">
-            <span class="section-tag">My Work</span>
-            <h2 class="section-title">Featured Projects</h2>
-        </div>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="/images/mathpop.png" alt="Math Pop">
-                    <div class="project-overlay">
-                        <a href="https://github.com/jorenzprintln/mathpop" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>MathPoP</h3>
-                    <p>Mobile Arithmetic Math Game Application built with React Native</p>
-                    <div class="project-tags">
-                        <span class="tag">React Native</span>
-                        <span class="tag">TypeScript</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-     alt="Encryption & Decryption App" 
-     class="project-bg-img">
-                    <div class="project-overlay">
-                        <a href="https://github.com/jorenzprintln/blowfish" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>BlowLock</h3>
-                    <p>Mobile Application for Encyprting and Decrypting Files using Blowfish Algorithm.</p>
-                    <div class="project-tags">
-                        <span class="tag">React Native</span>
-                        <span class="tag">TypeScript</span>
-                        <span class="tag">Python</span>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="/images/phishing.jpg" alt="Phishing Prevention App">
-                    <div class="project-overlay">
-                        <a href="https://github.com/jorenzprintln/phishing" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>PhishPrevent</h3>
-                    <p>Mobile Application for Phishing Prevention</p>
-                    <div class="project-tags">
-                        <span class="tag">React Native</span>
-                        <span class="tag">TypeScript</span>
-                        <span class="tag">Safe Browsing API</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
+        </section>
 
         <!-- Contact Section -->
         <section id="contact" class="section contact-section">
@@ -243,21 +296,27 @@
                         </p>
                         <div class="contact-methods">
                             <div class="contact-method">
-                                <div class="contact-icon">📧</div>
+                                <div class="contact-icon">
+                                    <img src="/images/communication.png" alt="Email">
+                                </div>
                                 <div>
                                     <h4>Email</h4>
-                                    <a href="mailto:your.email@example.com">jorenzlnu@gmail.com</a>
+                                    <a href="mailto:jorenzlnu@gmail.com">jorenzlnu@gmail.com</a>
                                 </div>
                             </div>
                             <div class="contact-method">
-                                <div class="contact-icon">📱</div>
+                                <div class="contact-icon">
+                                    <img src="/images/app.png"  alt="Phone">
+                                </div>
                                 <div>
                                     <h4>Phone</h4>
-                                    <a href="tel:+1234567890">+63 951 829 0505</a>
+                                    <a href="tel:+639518290505">+63 951 829 0505</a>
                                 </div>
                             </div>
                             <div class="contact-method">
-                                <div class="contact-icon">📍</div>
+                                <div class="contact-icon">
+                                    <img src="/images/map.png" alt="Location">
+                                </div>
                                 <div>
                                     <h4>Location</h4>
                                     <span>Tacloban City, Philippines</span>
