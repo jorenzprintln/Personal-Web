@@ -104,7 +104,7 @@
                     <p class="hero-subtitle">Full Stack Mobile & Web Developer</p>
                     <p class="hero-description">
                         I create beautiful, functional, and user-centered digital experiences 
-                        that solve real-world problems with clean code and intuitive design.
+                        that solve real-world problems with intuitive design.
                     </p>
                     <div class="hero-buttons">
                         <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -143,79 +143,218 @@
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="section about-section">
-            <div class="section-content">
-                <div class="section-header">
-                    <span class="section-tag">About Me</span>
-                    <h2 class="section-title">Who I Am</h2>
+<!-- About Section -->
+<section id="about" class="section about-section">
+    <div class="section-content">
+        <div class="section-header">
+            <span class="section-tag">About Me</span>
+            <h2 class="section-title">Who I Am</h2>
+        </div>
+        <div class="about-content">
+            <!-- Single Card with Tabs -->
+            <div class="about-card">
+                <div class="tab-navigation">
+                    <button class="tab-btn active" data-tab="personal">Personal Info</button>
+                    <button class="tab-btn" data-tab="skills">Skills & Expertise</button>
                 </div>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>
-                            I'm a passionate full-stack developer from Tacloban City, Philippines, with a strong foundation 
-                            in both mobile and web development. I love creating digital solutions that make a difference 
-                            and constantly learning new technologies to stay at the forefront of innovation.
-                        </p>
-                        
-                        <!-- Personal Information Grid -->
-                        <div class="personal-info-grid">
-                            <div class="info-section">
-                                <h3 class="info-title">Personal Information</h3>
-                                <div class="info-items">
-                                    <div class="info-item">
+                
+                <div class="card-content-wrapper">
+                    <!-- Personal Info Tab -->
+                    <div class="tab-content active" id="personal">
+                        <div class="personal-content">
+                            <div class="profile-picture">
+                                <img src="/images/portfolio.png" alt="Paul Jorenz Pablo">
+                            </div>
+                            <div class="personal-details">
+                                <div class="about-intro">
+                                    <p>
+                                        I'm a passionate full-stack developer from Tacloban City, Philippines, with a strong foundation 
+                                        in both mobile and web development. I love creating digital solutions that make a difference 
+                                        and constantly learning new technologies to stay at the forefront of innovation.
+                                    </p>
+                                </div>
+                                
+                                <div class="info-list">
+                                    <div class="info-list-item">
                                         <span class="info-label">Full Name:</span>
                                         <span class="info-value">Paul Jorenz Pablo</span>
                                     </div>
-                                    <div class="info-item">
+                                    <div class="info-list-item">
                                         <span class="info-label">Age:</span>
                                         <span class="info-value">20 years old</span>
                                     </div>
-                                    <div class="info-item">
+                                    <div class="info-list-item">
                                         <span class="info-label">Location:</span>
                                         <span class="info-value">Tacloban City, Philippines</span>
                                     </div>
-                                    <div class="info-item">
+                                    <div class="info-list-item">
                                         <span class="info-label">Languages:</span>
                                         <span class="info-value">English, Filipino, Waray</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Educational Background -->
-                        <div class="skills-grid">
-                            <div class="skill-item">
-                                <div class="skill-icon">
-                                    <img src="/images/national.png" alt="High School">
+                    </div>
+                    
+                    <!-- Skills Tab -->
+                    <div class="tab-content" id="skills">
+                        <div class="skills-container">
+                            <div class="skill-category">
+                                <h3>Frontend Development</h3>
+                                <div class="skill-bars">
+                                    <div class="skill-bar-item">
+                                        <div class="skill-bar-header">
+                                            <span>React Native & Flutter</span>
+                                            <span class="skill-percentage">90%</span>
+                                        </div>
+                                        <div class="skill-bar-bg">
+                                            <div class="skill-bar-fill" data-width="90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar-item">
+                                        <div class="skill-bar-header">
+                                            <span>JavaScript</span>
+                                            <span class="skill-percentage">85%</span>
+                                        </div>
+                                        <div class="skill-bar-bg">
+                                            <div class="skill-bar-fill" data-width="85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar-item">
+                                        <div class="skill-bar-header">
+                                            <span>HTML5 & CSS3</span>
+                                            <span class="skill-percentage">95%</span>
+                                        </div>
+                                        <div class="skill-bar-bg">
+                                            <div class="skill-bar-fill" data-width="95%"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <h3>High School</h3>
-                                <p>Burauen National High School<br>
-                                <span class="education-year">2016 - 2020</span></p>
                             </div>
-                            <div class="skill-item">
-                                <div class="skill-icon">
-                                   <img src="/images/pagsulhugon.png" alt="Senior High School">
+                            
+                            <div class="skill-category">
+                                <h3>Backend Development</h3>
+                                <div class="skill-bars">
+                                    <div class="skill-bar-item">
+                                        <div class="skill-bar-header">
+                                            <span>Python</span>
+                                            <span class="skill-percentage">80%</span>
+                                        </div>
+                                        <div class="skill-bar-bg">
+                                            <div class="skill-bar-fill" data-width="80%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar-item">
+                                        <div class="skill-bar-header">
+                                            <span>Node.js</span>
+                                            <span class="skill-percentage">75%</span>
+                                        </div>
+                                        <div class="skill-bar-bg">
+                                            <div class="skill-bar-fill" data-width="75%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar-item">
+                                        <div class="skill-bar-header">
+                                            <span>Database Management</span>
+                                            <span class="skill-percentage">70%</span>
+                                        </div>
+                                        <div class="skill-bar-bg">
+                                            <div class="skill-bar-fill" data-width="70%"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <h3>Senior High School</h3>
-                                <p>Pagsulhugon National High School<br>
-                                TVL - CSS Strand<br>
-                                <span class="education-year">2020 - 2022</span></p>
                             </div>
-                            <div class="skill-item">
-                                <div class="skill-icon">
-                                    <img src="/images/lnu.png" alt="College">
+                        
+                            
+                             <div class="skill-category">
+                                <h3>Tools & Technologies</h3>
+                                <div class="tech-icons-grid">
+                                    <div class="tech-icon-item">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                                        <span>Git</span>
+                                    </div>
+                                    <div class="tech-icon-item">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                                        <span>GitHub</span>
+                                    </div>
+                                    <div class="tech-icon-item">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+                                        <span>VS Code</span>
+                                    </div>
+                                    <div class="tech-icon-item">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter">
+                                        <span>Flutter</span>
+                                    </div>
+                                    <div class="tech-icon-item">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native">
+                                        <span>React Native</span>
+                                    </div>
+                                    <div class="tech-icon-item">
+                                        <img src="https://logo.svgcdn.com/devicon/laravel-original.svg" alt="Laravel">
+                                        <span>Laravel</span>
+                                    </div>
+                                    <div class="tech-icon-item">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                                        <span>HTML5</span>
+                                    </div>
+                                    <div class="tech-icon-item">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                                        <span>CSS3</span>
+                                    </div>
+                                    <div class="tech-icon-item">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                                        <span>JavaScript</span>
+                                    </div>
+                                    <div class="tech-icon-item">
+                                        <img src="https://logo.svgcdn.com/logos/expo-icon.svg" alt="Expo">
+                                        <span>Expo</span>
+                                    </div>
+                                     <div class="tech-icon-item">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                                        <span>Python</span>
+                                    </div>
                                 </div>
-                                <h3>College</h3>
-                                <p>Leyte Normal University<br>
-                                Bachelor of Science in Information Technology<br>
-                                <span class="education-year">2025 - Present - 4th Year</span></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+            
+            <!-- Educational Background (Remains outside the card) -->
+            <div class="education-section">
+                <h3 class="education-title">Educational Background</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="/images/national.png" alt="High School">
+                        </div>
+                        <h3>High School</h3>
+                        <p>Burauen National High School<br>
+                        <span class="education-year">2016 - 2020</span></p>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                           <img src="/images/pagsulhugon.png" alt="Senior High School">
+                        </div>
+                        <h3>Senior High School</h3>
+                        <p>Pagsulhugon National High School<br>
+                        TVL - CSS Strand<br>
+                        <span class="education-year">2020 - 2022</span></p>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="/images/lnu.png" alt="College">
+                        </div>
+                        <h3>College</h3>
+                        <p>Leyte Normal University<br>
+                        Bachelor of Science in Information Technology<br>
+                        <span class="education-year">2025 - Present - 4th Year</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
         <section id="projects" class="section projects-section">
             <div class="section-content">
@@ -236,7 +375,6 @@
                             <p>Mobile Arithmetic Math Game Application built with React Native</p>
                             <div class="project-tags">
                                 <span class="tag">React Native</span>
-                                <span class="tag">TypeScript</span>
                                 <span class="tag">JavaScript</span>
                             </div>
                         </div>
@@ -255,7 +393,7 @@
                             <p>Mobile Application for Encyprting and Decrypting Files using Blowfish Algorithm.</p>
                             <div class="project-tags">
                                 <span class="tag">React Native</span>
-                                <span class="tag">TypeScript</span>
+                                <span class="tag">JavaScript</span>
                                 <span class="tag">Python</span>
                             </div>
                         </div>
@@ -272,7 +410,7 @@
                             <p>Mobile Application for Phishing Prevention</p>
                             <div class="project-tags">
                                 <span class="tag">React Native</span>
-                                <span class="tag">TypeScript</span>
+                                <span class="tag">JavaScript</span>
                                 <span class="tag">Safe Browsing API</span>
                             </div>
                         </div>

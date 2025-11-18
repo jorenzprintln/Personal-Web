@@ -1,12 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize EmailJS with your public key
-    emailjs.init('J8PYga9msHdegeKll'); // Replace with your actual public key
+    emailjs.init('J8PYga9msHdegeKll');
     
     // Initialize all functionality
     initNavigation();
     initScrollAnimations();
     initContactForm();
     initSmoothScrolling();
+    initTabs(); // Add this
+    initSkillBarsAnimation(); // Add this
 });
 // Navigation functionality
 function initNavigation() {
@@ -422,3 +424,90 @@ function initTypingEffect() {
 
 // Uncomment the line below if you want the typing effect
  setTimeout(initTypingEffect, 1000);
+
+ function initTabs() {
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+    
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const targetTab = button.getAttribute('data-tab');
+            
+            // Remove active class from all buttons and contents
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            tabContents.forEach(content => content.classList.remove('active'));
+            
+            // Add active class to clicked button and corresponding content
+            button.classList.add('active');
+            document.getElementById(targetTab).classList.add('active');
+            
+            // Animate skill bars when skills tab is opened
+            if (targetTab === 'skills') {
+                animateSkillBars();
+            }
+        });
+    });
+}
+
+// Animate skill bars
+function animateSkillBars() {
+    const skillBars = document.querySelectorAll('.skill-bar-fill');
+    
+    skillBars.forEach((bar, index) => {
+        const width = bar.getAttribute('data-width');
+        
+        // Reset width
+        bar.style.width = '0';
+        
+        // Animate with delay for each bar
+        setTimeout(() => {
+            bar.style.setProperty('--skill-width', width);
+            bar.classList.add('animate');
+            bar.style.width = width;
+        }, index * 150);
+    });
+}
+
+// Initialize skill bars animation on scroll
+function initSkillBarsAnimation() {
+    const skillsTab = document.getElementById('skills');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && entry.target.classList.contains('active')) {
+                animateSkillBars();
+            }
+        });
+    }, {
+        threshold: 0.3
+    });
+    
+    if (skillsTab) {
+        observer.observe(skillsTab);
+    }
+}
+function initTabKeyboardNavigation() {
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    
+    tabButtons.forEach((button, index) => {
+        button.addEventListener('keydown', (e) => {
+            let newIndex;
+            
+            if (e.key === 'ArrowRight') {
+                newIndex = index + 1 >= tabButtons.length ? 0 : index + 1;
+                e.preventDefault();
+            } else if (e.key === 'ArrowLeft') {
+                newIndex = index - 1 < 0 ? tabButtons.length - 1 : index - 1;
+                e.preventDefault();
+            }
+            
+            if (newIndex !== undefined) {
+                tabButtons[newIndex].click();
+                tabButtons[newIndex].focus();
+            }
+        });
+    });
+}
+
+// Call this in DOMContentLoaded if you want keyboard navigation
+initTabKeyboardNavigation();
